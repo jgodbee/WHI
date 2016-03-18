@@ -164,6 +164,27 @@
 .jetmenu > li.right{
 	float: right;
 }
+
+.jetmenu > li.right i {
+	color: #a0977a;
+	}
+	
+.jetmenu > li.right ul.social li a i {
+	color: #fff;
+	}
+	
+.jetmenu li > .megamenu ul.social {
+	margin-top: -15px;
+	width: 100%;
+	}
+
+.jetmenu li > .megamenu ul.social li {
+	float: left;
+	width: 30px;
+	display: inline-block;
+	margin: 0 6px 0 0;
+	}
+	
 .jetmenu > li.right > .megamenu,
 .jetmenu > li.right > .megamenu.half-width,
 .jetmenu > li.right > .dropdown{
@@ -192,7 +213,6 @@
 }
 .jetmenu > li.showhide span.title{
 	margin: 15px 0 0 25px;
-	font-family: 'Open Sans', sans-serif;
 	float: left;
 }
 .jetmenu > li.showhide span.icon{
@@ -269,6 +289,7 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		clear: both;
 	}
 	.jetmenu > li > .megamenu .row:first-child  [class*="col"]:first-child {
 		margin-top: 0;
