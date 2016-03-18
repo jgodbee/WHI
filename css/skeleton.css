@@ -229,6 +229,12 @@ input[type="button"].button-primary:focus {
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
 
+.button.large {
+	font-size: 1.6rem;
+	padding: 4px 30px;
+	height: auto;
+	}
+
 .button.blue {
 	background: #006c83;
 	color: #fff;
@@ -240,8 +246,7 @@ input[type="button"].button-primary:focus {
 	color: #fff;
 	border: 1px solid #f04d22;
 	}
-
-
+	
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -397,6 +402,9 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
+.row {
+	margin: 0;
+	}
 .container:after,
 .row:after,
 .u-cf {
@@ -643,7 +651,7 @@ a#logo {
 	letter-spacing: 0;
 	}
 	
-.post-item .meta-data {
+.meta-data {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.3rem;
@@ -653,7 +661,7 @@ a#logo {
 	color: #bfc0c4;
 	}
 	
-.post-item .author {
+.author {
 	color: #f14e23;
 	}
 	
@@ -846,7 +854,65 @@ a.play:hover {
 	margin: 2rem 0;
 	padding: 0;
 	}
+	
+/* Blog Posts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.shop li {
+	list-style: none;
+	margin: 0 0 5rem 0;
+	padding: 0;
+	}
+	
+.product-type {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin-bottom: .7rem;
+	color: #bfc0c4;
+	}
+	
+.categories-list {
+	border-top: 1px solid #ebebeb;
+	}
+	
+.categories-list li {
+	position: relative;
+	list-style: none;
+	margin: 1.2rem 0 1.2rem 0;
+	padding: 1.2rem 0 1.2rem 0;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #ebebeb;
+	}
+	
+.categories-list li:first-child {
+	margin-top: 0;
+	}
+	
+.categories-list li a {
+	color: #222;
+	}
+	
+.categories-list li a:hover {
+	color: #006c83;
+	text-decoration: none;
+	}
+	
+.categories-list li a i {
+	color: #a9a8a8;
+	padding-right: 5px;
+	}
+	
+.categories-list li a .cat-count {
+	color: #a9a8a8;
+	float: right;
+	}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */	
