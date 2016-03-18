@@ -1,11 +1,4 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
+@import "lib/bootstrap.min.css"; /* Helper for tabs & scheduling */
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -110,6 +103,7 @@ body {
 
 img {
 	max-width: 100%;
+	margin-bottom: 1rem;
 	}
 
 
@@ -125,6 +119,26 @@ h3 { font-size: 2.0rem; line-height: 1.3; margin-bottom: 1rem; }
 h4 { font-size: 1.8rem; line-height: 1.35; margin-bottom: 1rem; }
 h5 { font-size: 1.6rem; line-height: 1.5; margin-bottom: 1rem; color: #f04d22; }
 h6 { font-size: 1.4rem; line-height: 1.6; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; }
+
+blockquote {
+	position: relative;
+	padding: 2rem 2rem 2rem 3rem;
+	margin: 0;
+	font-size: 1.7rem;
+	text-align: left;
+	border: 1px solid #e8ecf0;
+	color: #878184;
+	}
+	
+blockquote:before {
+	position: absolute;
+	top: 0;
+	left: -1rem;
+	font-size: 5rem;
+	content: "“";
+	font-family: Georgia, serif;
+	color: #f04d22;
+	}
 
 p {
   margin-top: 0; }
@@ -145,9 +159,12 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+	color: #006c83; 
+	}
+	
 a:hover {
-  color: #0FA0CE; }
+	color: #f04d22; 
+	}
 
 
 /* Buttons
@@ -173,7 +190,8 @@ input[type="button"] {
   background-color: transparent;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -186,7 +204,8 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+  outline: 0; 
+  text-decoration: none;}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -303,17 +322,6 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
-.jetmenu li > .megamenu ul.social {
-	width: 100%;
-	}
-
-.jetmenu li > .megamenu ul.social li {
-	float: left;
-	width: 30px;
-	display: inline-block;
-	margin: 0 13px 0 0;
-	}
-
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
@@ -348,7 +356,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 1.8rem; }
 
 
 /* Utilities
@@ -375,7 +383,7 @@ hr {
 	}
 	
 .overlay {
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -403,12 +411,13 @@ a#logo {
 	position: relative;
 	top: 30px;
 	}
+
 	
 /* Module Styling
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .module {
-	padding: 30px 0;	
+	padding: 3rem 0;	
 	}
 	
 .full-width {
@@ -450,6 +459,10 @@ a#logo {
 	background: #006c83;
 	}
 	
+.featured-items .row.orange {
+	background: #f04d22;
+	}
+	
 .featured-items .main-item {
 	position: relative;
 	}
@@ -463,7 +476,7 @@ a#logo {
 	
 .featured-items .item-container {
 	float: left;
-	width: 30.6666666667%;
+	width: 34.6666666667%;
 	height: 418px;
 	}
 	
@@ -483,7 +496,7 @@ a#logo {
 	
 	@media (max-width: 960px) {
 		.featured-items .item {
-			width: 96%;
+			width: 100%;
 			padding: 0 2%;
 			}
 		}
@@ -498,6 +511,14 @@ a#logo {
 	background: -webkit-linear-gradient(top,  rgba(38,130,149,1) 0%,rgba(1,93,112,1) 100%);
 	background: linear-gradient(to bottom,  rgba(38,130,149,1) 0%,rgba(1,93,112,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#268295', endColorstr='#015d70',GradientType=0 );
+	}
+	
+.featured-items .row.orange .item {
+	background: rgb(241,103,66);
+	background: -moz-linear-gradient(top,  rgba(241,103,66,1) 0%, rgba(240,77,34,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(241,103,66,1) 0%,rgba(240,77,34,1) 100%);
+	background: linear-gradient(to bottom,  rgba(241,103,66,1) 0%,rgba(240,77,34,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16742', endColorstr='#f04d22',GradientType=0 );
 	}
 	
 .featured-items .item .item-content {
@@ -521,6 +542,73 @@ a#logo {
 .featured-items span.number:before {
 	content: "#";
 	}
+	
+.show-cta {
+	background: url('../images/icon-broadcast.png') no-repeat left center;
+	background-size: 28px 28px;
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	padding: 5px 0 5px 32px;
+	letter-spacing: 3px;
+	color: #fff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	}
+	
+.archive-cta {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	padding: 5px 0;
+	letter-spacing: 3px;
+	color: #fff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	}
+	
+.show-cta:hover,
+.archive-cta:hover {
+	color: #fff;
+	opacity: 0.7;
+	}
+	
+/* Hero Area
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero {
+	position: relative;
+	color: #fff;
+	min-height: 270px;
+	margin: 0 0 3rem 0;
+	}
+	
+.hero h1 {
+	padding-top: 2rem;
+	font-weight: 300;
+	}
+	
+.hero h5 {
+	letter-spacing: 4px;
+	}
+	
+.hero p {
+	margin-bottom: 1rem;
+	}
+	
+.module.page-header {
+	background: #231f20;
+	color: #fff;
+	position: relative;
+	height: 70px;
+	padding: 0px;
+	margin: 0px 0px 5rem;
+	}
+
+.module.page-header h1 {
+	line-height: 105px;
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	}
 
 /* Post Listings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */	
@@ -529,6 +617,18 @@ a#logo {
 	border: 1px solid #e8ecf0;
 	box-sizing: border-box;
 	}
+	
+	@media (max-width: 960px) {
+		.post-list .post-item {
+			width: 48%;
+			margin-left: 4%;
+			margin-bottom: 3rem;
+			}
+			
+		.post-list .post-item:nth-child(odd) {
+			margin-left: 0;
+			}
+		}
 	
 .post-list  .post-item-excerpt {
 	padding: .3rem 1.4rem 0 1.4rem;
@@ -555,21 +655,33 @@ a#logo {
 	color: #f14e23;
 	}
 	
-/* Upcoming Shows
+/* Shows Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.upcoming-show {
+.upcoming-show,
+.archived-show {
+	display: block;
 	background: #edeef0;
   	font-family: 'Oswald', sans-serif;
 	position: relative;
 	}
 	
-.upcoming-show h4 {
+.archived-show:after {
+	content: "\f04b";
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	}
+	
+.upcoming-show h4,
+.archived-show h4 {
 	font-size: 2.1rem;
 	padding: .66em 30px .66em 70px;
 	}
 	
-.upcoming-show span.show-date {
+.upcoming-show span.show-date,
+.archived-show span.show-date {
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -582,6 +694,18 @@ a#logo {
     line-height: 1.8rem;
 	}
 	
+.archive-list li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+h3.year {
+	font-size: 4rem;
+	font-style: italic;
+	color: #f04d22;
+	}
+	
 	
 /* Videos
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -590,6 +714,12 @@ a#logo {
 	position: relative;
 	width: 100%;
 	}
+	
+		@media (max-width: 960px) {
+			.video {
+				text-align: center;
+				}
+			}
 	
 a.play {
 	height: 52px;
@@ -642,6 +772,16 @@ a.play:hover {
 	color: #006c83;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	padding: 4px 0 4px 30px;
+	}
+	
+.stations-list h4 {
+	background: url('../images/icon-shows.png') no-repeat left center;
+	}
+
+.groups-list h4 {
+	background: url('../images/icon-groups.png') no-repeat left center;
+	padding-left: 35px;
 	}
 	
 .stations-list h5,
@@ -660,6 +800,16 @@ a.play:hover {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-family: 'Oswald', sans-serif;
+	}
+
+	
+/* Events
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.event-date {
+	display: block;
+	font-size: 1.9rem;
+	margin-bottom: 2rem;
 	}
 
 
@@ -687,7 +837,7 @@ footer .social li {
 	float: left;
 	width: 30px;
 	display: inline-block;
-	margin: 0 13px 0 0;
+	margin: 0 6px 0 0;
 	}
 	
 footer .social li a {
