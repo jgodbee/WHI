@@ -128,6 +128,7 @@ blockquote {
 	text-align: left;
 	border: 1px solid #e8ecf0;
 	color: #878184;
+	font-style: italic;
 	}
 	
 blockquote:before {
@@ -603,7 +604,8 @@ a#logo {
 	margin: 0px 0px 5rem;
 	}
 
-.module.page-header h1 {
+.module.page-header h1,
+.module.page-header h2 {
 	line-height: 105px;
 	font-size: 4rem;
 	text-transform: uppercase;
@@ -810,6 +812,39 @@ a.play:hover {
 	display: block;
 	font-size: 1.9rem;
 	margin-bottom: 2rem;
+	}
+	
+/* Blog Posts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.blog .module.page-header {
+	margin: 0;
+	}
+	
+.blog .module.post-hero {
+	padding-top: 0;
+	}
+	
+.blog .post-title {
+	margin-bottom: 3rem;
+	}
+	
+.post-single cite {
+	background: #e8ecf0;
+	padding: 1rem;
+	display: inline-block;
+	float: right;
+	font-family: 'Oswald', sans-serif;
+	color: #f14e23;
+	position: relative;
+	top: -19px;
+	margin-left: 15px;
+	}
+	
+.comments li {
+	list-style: none;
+	margin: 2rem 0;
+	padding: 0;
 	}
 
 
