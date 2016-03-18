@@ -104,6 +104,8 @@
 	left: 0;
 }
 
+
+
 /* MEGAMENU GRID SYSTEM
 **********************************************************/
 .megamenu .row{
@@ -209,7 +211,7 @@
 	height: 50px;
 	cursor: pointer;
 	color: #999;
-	background: #333;
+	background: transparent;
 }
 .jetmenu > li.showhide span.title{
 	margin: 15px 0 0 25px;
@@ -242,6 +244,11 @@
 /* RESPONSIVE LAYOUT
 **********************************************************/
 @media (max-width: 768px) {
+	
+	.jetmenu > li > .megamenu.full-width {
+		margin-top: -10px;
+		}
+	
 	.jetmenu > li{
 		display: block;
 		width: 100%;
