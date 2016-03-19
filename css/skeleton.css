@@ -619,9 +619,9 @@ a#logo {
 
 .module.page-header h1,
 .module.page-header h2 {
-	line-height: 105px;
-	font-size: 4rem;
-	text-transform: uppercase;
+	line-height: 95px;
+    	font-size: 6rem;
+    	text-transform: uppercase;
 	letter-spacing: 1px;
 	}
 
