@@ -10,16 +10,23 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/jetmenu.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<a id="logo" href="index.html"><img src="images/whitehorseinn-logo.jpg" alt="White Horse Inn" /></a>
+			<div id="search">
+			<form class="searchbox">
+		        <input type="search" placeholder="Search..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+			        <input type="submit" class="searchbox-submit" value="GO">
+			        <span class="searchbox-icon"><i class="fa fa-search"></i></span>
+				</form>
+			</div>
 			<ul class="jetmenu">
 				<li class="right">
-					<a href="#"><i class="fa fa-align-justify"></i> Menu</a>
+					<a href="#">Menu <i class="fa fa-align-justify"></i></a>
 					<div class="megamenu full-width">
 						<div class="row">
 							<div class="col2">
@@ -111,7 +118,6 @@
 						</div>
 					</div>
 				</li>
-				<li class="right"><a href="#"><i class="fa fa-search"></i> Search</a></li>
 			</ul>
 		</div>
 	</header>
@@ -357,11 +363,6 @@
 	</footer>
 		
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/jetmenu.js"></script>
-<script type="text/javascript">
-     jQuery(document).ready(function() {
-          $().jetmenu();
-     });
-</script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
