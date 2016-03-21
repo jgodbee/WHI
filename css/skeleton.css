@@ -289,7 +289,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #f04d22;
+  border: 1px solid #222;
   outline: 0; }
 label,
 legend {
@@ -424,17 +424,35 @@ a#logo {
     overflow: hidden;
     width: 300px;
     position: absolute;
-    top: 50px;
-    right: 10%;
+    top: 47px;
+    right: 9%;
 	}
 	
-.searchbox{
-	position:relative;
-	min-width:50px;
-	width:0%;
-	height:50px;
-	float:right;
-	overflow:hidden;
+	@media (max-width: 1100px) {
+		#search {
+			right: 13%;
+			}
+		}
+	
+	@media (max-width: 900px) {
+		#search {
+			right: 16%;
+			}
+		}		
+	
+	@media (max-width: 800px) {
+		#search {
+			display: none;
+			}
+		}
+	
+.searchbox {
+	position: relative;
+	min-width: 50px;
+	width: 0%;
+	height: 50px;
+	float: right;
+	overflow: hidden;
 	-webkit-transition: width 0.3s;
 	-moz-transition: width 0.3s;
 	-ms-transition: width 0.3s;
@@ -442,54 +460,55 @@ a#logo {
 	transition: width 0.3s;
 	}
 
-.searchbox-input{
-	top:0;
-	right:0;
-	border:0;
-	outline:0;
-	background:#dcddd8;
-	width:100%;
-	height:50px;
-	margin:0;
-	padding:0px 55px 0px 20px;
-	font-size:20px;
-	color:#222;
+.searchbox-input {
+	top: 0;
+	right: 0;
+	border: 0;
+	outline: 0;
+	background: #dcddd8;
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	padding: 0px 55px 0px 20px;
+	font-size: 20px;
+	color: #222;
+	border: 1px solid #222;
 	}
 	
 .searchbox-input::-webkit-input-placeholder {
-	color: #d74b4b;
+	color: #dcddd8;
 	}
 	
 .searchbox-input:-moz-placeholder {
-	color: #d74b4b;
+	color: #dcddd8;
 	}
 	
 .searchbox-input::-moz-placeholder {
-	color: #d74b4b;
+	color: #dcddd8;
 	}
 	
 .searchbox-input:-ms-input-placeholder {
-	color: #d74b4b;
+	color: #dcddd8;
 	}
 
 .searchbox-icon,
-.searchbox-submit{
-	width:50px;
-	height:50px;
-	display:block;
-	position:absolute;
-	top:0;
+.searchbox-submit {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 0;
 	font-size: 1.1em;
-	right:0;
-	padding:0;
-	margin:0;
-	border:0;
-	outline:0;
-	line-height:50px;
-	text-align:center;
-	cursor:pointer;
-	color:#a0977a;
-	background:#fff;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #a0977a;
+	background: #fff;
 	z-index: 9;
 	}
 	
@@ -498,8 +517,8 @@ a#logo {
 	background: #222;
 	}
 	
-.searchbox-open{
-	width:100%;
+.searchbox-open {
+	width: 100%;
 	}
 	
 /* Module Styling
