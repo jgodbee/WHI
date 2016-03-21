@@ -1466,6 +1466,7 @@ tbody.collapse.in {
 	
 .categories-list li a {
 	color: #222;
+	text-decoration: none;
 	}
 	
 .categories-list li a:hover {
